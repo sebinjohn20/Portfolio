@@ -3,7 +3,8 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/portofolio/", // ⚠️ only for GitHub Pages
+  base: "/", // ✅ MUST be root for Vercel
+
   plugins: [react(), tailwindcss()],
 
   build: {
